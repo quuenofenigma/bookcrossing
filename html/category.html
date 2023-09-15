@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookCrossing - Главная</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="BookCrossing" width="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О проекте</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Категории</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="mt-5">Название категории</h1>
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="position-relative">
+            <span class="badge badge-success">Популярная</span>
+            <img src="img/no-image.jpg" class="card-img-top book-image" alt="Book 1">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Название книги 1</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Автор книги 1</h6>
+            <p class="card-text">Краткое описание книги 1 (меньше 100 символов)</p>
+            <a href="book.html" class="btn btn-primary mt-3">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above card for other books -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="position-relative">
+            <span class="badge badge-primary">Новая</span>
+            <img src="img/no-image.jpg" class="card-img-top book-image" alt="Book 2">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название книги 2</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Автор книги 2</h6>
+            <p class="card-text">Краткое описание книги 2 (меньше 100 символов)</p>
+            <a href="book2.html" class="btn btn-primary mt-3">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light mt-5 py-3">
+    <div class="container text-center">
+      <span>&copy; 2023 BookCrossing</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

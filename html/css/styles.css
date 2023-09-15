@@ -1,0 +1,81 @@
+body {
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  background-color: #c2e8c2 !important;
+  padding: 0 1rem;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #fff;
+  background-color: #6d8f7a;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px 0;
+  text-align: center;
+}
+footer.bg-light {
+  background-color: #c2e8c2 !important;
+  color: #000 !important;
+}
+.card {
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.book-image {
+  max-width: 300px;
+}
+
+.badge-success {
+  background-color: #28a745;
+}
+
+.badge-primary {
+  background-color: #007bff;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Adjust the max-height value as per your requirement */
+}
+
