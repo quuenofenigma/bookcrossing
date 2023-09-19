@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}BookCrossing - Главная{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="mt-5">Название категории</h1>
+    <div class="row mt-4">
+        {% for book in category_book %}
+          {% include 'includes/card_body.html' %}
+        {% endfor %}
+    </div>
+  </div>
+{% endblock %}

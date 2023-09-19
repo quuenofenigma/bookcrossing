@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}BookCrossing - Информация о категориях{% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h1>Информация о категориях</h1>
+    <div class="row">
+      {% for category in categories %}
+      <div class="col-md-4">
+        <div class="shadow card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">{{ category.name }}</h5>
+            <p class="card-text">{{ category.description }}</p>
+            <p class="card-text">Количество книг из этой категории: {{ category.books_count }}</p>
+            <a href="{% url 'catalog:category_views' category.name %}" class="btn btn-primary">Просмотреть</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}BookCrossing - Подробная информация о книге{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <div class="shadow-lg row">
+        <div class="col-md-4">
+            {% if book.image %}
+                <img src="{% static book.image %}" alt="Book Image" class="img-fluid">
+            {% else %}
+                <img src="{% static 'img/no-image.jpg' %}" alt="Book Image" class="img-fluid">
+            {% endif %}
+        </div>
+        <div class="col-md-8">
+            <h1>{{ book.title }}</h1>
+            <h4>{{ book.author }}</h4>
+            <p class="text-muted">{{ book.category|join:', ' }}</p>
+            <p>Год создания: {{ book.year }}</p>
+            <p>ISBN: {{ book.ISBN }}</p>
+            <h4>Описание:</h4>
+            <p>{{ book.description }}.</p>
+            <h4>Местоположение:</h4>
+            <p>{{ book.place }}.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
