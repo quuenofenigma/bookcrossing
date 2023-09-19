@@ -11,11 +11,11 @@ def index_views(request):
 
 def book_views(request, id):
     template_name = 'catalog/book.html'
-    try:
-        book = {book['id']: book for book in BOOKS}[id]
-    except KeyError:
-        raise Http404('Такой книги не существует.')
-    return render(request, template_name, {'book': book})
+    for book in BOOKS:
+        if book['id'] == id:
+            context = {'book': book}
+            return render(request, template_name, context)
+    raise Http404('Такой книги не существует.')
 
 
 def categories_views(request):
@@ -31,4 +31,3 @@ def category_views(request, category_str):
             category_book.append(book)
 
     return render(request, template_name, {'category_book': category_book})
-
